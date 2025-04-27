@@ -5,7 +5,12 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-        <Image src="https://via.placeholder.com/120x40" alt="Styflex Logo" width={120} height={40} />
+        <Image
+          src="https://via.placeholder.com/120x40/34c759/ffffff?text=StyFlex"
+          alt="Styflex Logo"
+          width={120}
+          height={40}
+        />
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="text-gray-700 hover:text-primary font-medium">Home</Link>
           <Link href="/abonnements" className="text-gray-700 hover:text-primary font-medium">Abonnements</Link>
