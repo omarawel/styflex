@@ -4,6 +4,14 @@
 
 @import 'react-big-calendar/lib/css/react-big-calendar.css';
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
 .animate-fade-in {
   animation: fadeIn 1s ease-in-out;
 }
@@ -11,4 +19,47 @@
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.faq-item {
+  cursor: pointer;
+}
+
+.faq-content {
+  display: none;
+}
+
+.faq-content.active {
+  display: block;
+}
+
+.progress-circle {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.progress-line {
+  transition: background-color 0.3s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover animations */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
 }
